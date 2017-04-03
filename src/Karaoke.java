@@ -10,6 +10,7 @@ public class Karaoke {
         this.tests = tests;
     }
 
+    //prints the highest score for each test case
     public void printHighScores() {
         String output = this.tests.stream().map(e -> e.getHighestScore() + "\n").reduce("", String::concat);
         System.out.print(output);
